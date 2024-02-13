@@ -1,0 +1,149 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lobster Two', sans-serif;
+    color: #333;
+    background-color: #f8f9fa; /* Color de fondo ligeramente gris */
+}
+
+.index__contenedor {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    background-image: url('ilustraciones/ilustraciones  (2).png');
+    background-size: cover; /* Para que la imagen de fondo cubra todo el área */
+    background-position: center; /* Para centrar la imagen de fondo */
+    padding: 20px 0;
+    color: #333;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centrar el texto del encabezado */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px; /* Tamaño de fuente más grande */
+}
+
+/* Nav */
+.nav {
+    background-color: #f8f9fa; /* Fondo ligeramente gris */
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 99999999;
+}
+
+.nav__ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__ul li {
+    margin-right: 20px;
+}
+
+.nav__ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 30px; /* Bordes redondeados */
+    transition: background-color 0.3s ease;
+    font-weight: bold; /* Texto en negrita */
+}
+
+.nav__ul li a:hover {
+    background-color: #f806af;
+    color: #fff; /* Cambio de color de texto al pasar el ratón */
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center; /* Centrar elementos en dispositivos móviles */
+    }
+
+    .nav__ul {
+        flex-direction: column;
+        text-align: center; /* Centrar texto en dispositivos móviles */
+    }
+
+    .nav__ul li {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}
+
+h2, h3, h4 {
+    font-size: 36px;
+    color: #333; /* Color del texto */
+    margin-bottom: 20px; /* Espacio inferior */
+    font-family: 'Lobster Two', sans-serif; /* Fuente */
+    font-weight: bold; /* Grosor del texto */
+    border-bottom: 2px solid #333; /* Línea inferior */
+    padding-bottom: 10px; /* Espacio entre la línea inferior y el texto */
+    margin-top: 30px;
+    width: 95%;
+    margin-left: 30px;
+    
+    
+}
+
+.pinturas__galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Columnas automáticas con un ancho mínimo de 300px */
+    grid-gap: 20px; /* Espacio entre las imágenes */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.pinturas__galeria__imagen {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.pinturas__galeria__imagen img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.pinturas__galeria__imagen:hover img {
+    transform: scale(1.1); /* Zoom al pasar el mouse sobre la imagen */
+}
+
+.pinturas__galeria__descripcion {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+    font-family: "Playfair Display", serif;
+}
+
+.index__footer {
+    text-align: center;
+    color: #111111;
+    margin-bottom: 180px;
+    margin-top: 0px;
+}

@@ -1,0 +1,211 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lobster Two', sans-serif;
+    color: #333;
+    background-color: #f8f9fa; /* Color de fondo ligeramente gris */
+}
+
+.index__contenedor {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    background-image: url('ilustraciones/ilustraciones  (2).png');
+    background-size: cover; /* Para que la imagen de fondo cubra todo el área */
+    background-position: center; /* Para centrar la imagen de fondo */
+    padding: 20px 0;
+    color: #333;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centrar el texto del encabezado */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px; /* Tamaño de fuente más grande */
+}
+
+/* Nav */
+.nav {
+    background-color: #f8f9fa; /* Fondo ligeramente gris */
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 99999999;
+}
+
+.nav__ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__ul li {
+    margin-right: 20px;
+}
+
+.nav__ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 30px; /* Bordes redondeados */
+    transition: background-color 0.3s ease;
+    font-weight: bold; /* Texto en negrita */
+}
+
+.nav__ul li a:hover {
+    background-color: #f806af;
+    color: #fff; /* Cambio de color de texto al pasar el ratón */
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center; /* Centrar elementos en dispositivos móviles */
+    }
+
+    .nav__ul {
+        flex-direction: column;
+        text-align: center; /* Centrar texto en dispositivos móviles */
+    }
+
+    .nav__ul li {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}
+
+h2, h3, h4 {
+    font-size: 36px;
+    color: #333; /* Color del texto */
+    margin-bottom: 20px; /* Espacio inferior */
+    font-family: 'Lobster Two', sans-serif; /* Fuente */
+    font-weight: bold; /* Grosor del texto */
+    border-bottom: 2px solid #333; /* Línea inferior */
+    padding-bottom: 10px; /* Espacio entre la línea inferior y el texto */
+    margin-top: 30px;
+    width: 95%;
+    margin-left: 30px;
+    
+    
+}
+
+
+/* Sección de presentación */
+.index__contenedor__presentación__texto,
+.index__contenedor__presentación__imagen {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-basis: 45%;
+}
+
+.index__contenedor__presentación__imagen {
+    position: relative; /* Para permitir el posicionamiento de la imagen */
+    overflow: hidden; /* Oculta partes de la imagen que estén fuera del contenedor */
+    z-index: 99;
+}
+
+.index__contenedor__presentación__texto {
+    
+    text-align: center;
+
+}
+
+.index__contenedor__presentación__imagen img {
+    width: 100%; /* Ajusta la imagen al ancho del contenedor */
+    display: block; /* Elimina espacios no deseados alrededor de la imagen */
+    }
+
+
+/* Sección de currículum vitae */
+.index__contenedor__curriculum {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Media query para cambiar a column cuando el ancho de la pantalla sea menor o igual a 768px */
+@media screen and (max-width: 768px) {
+    .index__contenedor__curriculum {
+        flex-direction: column;
+    }
+}
+
+.index__contenedor__curriculum__experiencia__profesional,
+.index__contenedor__curriculum__formación__académica,
+.index__contenedor__curriculum__habilidades {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px; /* Espacio entre los contenedores */
+    border: 2px solid #ccc; /* Añadir un borde gris */
+    padding: 20px; /* Agregar relleno para separar el contenido del borde */
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    text-align: center;
+}
+
+
+.index__contenedor__curriculum__habilidades__titulo, .index__contenedor__curriculum__experiencia__profesional__titulo,
+.index__contenedor__curriculum__formación__académica__titulo {
+    font-size: 24px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    color: #333; /* Color de texto */
+    margin-bottom: 10px; /* Espacio inferior */
+    border-bottom: 2px solid #f806af; /* Borde inferior */
+    padding-bottom: 5px; /* Espacio entre el texto y el borde */
+}
+
+
+.imagen__whatsapp, .imagen__instagram {
+
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 15%;
+    height: auto;
+    margin-bottom: 15px; 
+    margin-top:15px;
+    border-radius: 8px;
+    
+}
+
+@media screen and (min-width: 768px) {
+    .publicaciones__imagenes {
+    max-width: 30%; /* Establece el límite de anchura en pantallas grandes */
+    height: auto; /* Mantiene la proporción de aspecto */
+    }
+ }
+
+.index__contenedor__redes__sociales__link {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.index__footer {
+    text-align: center;
+    color: #111111;
+    margin-bottom: 180px;
+    margin-top: 0px;
+}
+
+
+
+
+
+ 

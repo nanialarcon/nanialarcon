@@ -1,0 +1,182 @@
+//* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lobster Two', sans-serif;
+    color: #333;
+    background-color: #f8f9fa; /* Color de fondo ligeramente gris */
+}
+
+.index__contenedor {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    background-image: url('ilustraciones/ilustraciones  (2).png');
+    background-size: cover; /* Para que la imagen de fondo cubra todo el área */
+    background-position: center; /* Para centrar la imagen de fondo */
+    padding: 20px 0;
+    color: #333;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centrar el texto del encabezado */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px; /* Tamaño de fuente más grande */
+}
+
+/* Nav */
+.nav {
+    background-color: #f8f9fa; /* Fondo ligeramente gris */
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 99999999;
+}
+
+.nav__ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__ul li {
+    margin-right: 20px;
+}
+
+.nav__ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 30px; /* Bordes redondeados */
+    transition: background-color 0.3s ease;
+    font-weight: bold; /* Texto en negrita */
+}
+
+.nav__ul li a:hover {
+    background-color: #f806af;
+    color: #fff; /* Cambio de color de texto al pasar el ratón */
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center; /* Centrar elementos en dispositivos móviles */
+    }
+
+    .nav__ul {
+        flex-direction: column;
+        text-align: center; /* Centrar texto en dispositivos móviles */
+    }
+
+    .nav__ul li {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}
+
+h2, h3, h4 {
+    font-size: 36px;
+    color: #333; /* Color del texto */
+    margin-bottom: 20px; /* Espacio inferior */
+    font-family: 'Lobster Two', sans-serif; /* Fuente */
+    font-weight: bold; /* Grosor del texto */
+    border-bottom: 2px solid #333; /* Línea inferior */
+    padding-bottom: 10px; /* Espacio entre la línea inferior y el texto */
+    margin-top: 30px;
+    width: 95%;
+    margin-left: 30px;
+    
+    
+}
+
+/* Formulario de contacto */
+#contacto {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+input,
+textarea {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #ccc;
+    color: #fff;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f806af;
+}
+
+/* Contacto Rápido */
+#contacto-rapido {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#contacto-rapido h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+#contacto-rapido p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#contacto-rapido a {
+    color: #0D0A6B;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#contacto-rapido a:hover {
+    text-decoration: underline;
+}
+
+.fa-whatsapp {
+    height: 85px;
+}
+
